@@ -1,7 +1,0 @@
-# this file is currently used by autoprefixer to adjust CSS to support the below specified browsers
-# for additional information regarding the format and rule options, please see:
-# https://github.com/browserslist/browserslist#queries
-
-last 1 chrome versions
-last 1 firefox versions
-last 1 edge versions

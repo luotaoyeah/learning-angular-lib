@@ -1,1 +1,1 @@
-export * from './lib/kg--common.module';
+export * from './lib/t--learning-angular-lib.module';

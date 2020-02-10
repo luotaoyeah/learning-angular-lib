@@ -9,4 +9,4 @@ import { TFooComponent } from './foo/t--foo.component';
   imports: [...[CommonModule, FormsModule, ReactiveFormsModule, RouterModule]],
   exports: [TFooComponent],
 })
-export class KgComponentModule {}
+export class TComponentModule {}
