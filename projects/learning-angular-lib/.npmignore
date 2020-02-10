@@ -1,0 +1,10 @@
+/src
+.gitignore
+.npmignore
+karma.conf.js
+ng-package.json
+tsconfig.json
+tsconfig.prod.json
+tsconfig.spec.json
+tslint.json
+*.tgz

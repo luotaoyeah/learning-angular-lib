@@ -1,0 +1,25 @@
+{
+  "angularCompilerOptions": {
+    "enableIvy": false,
+    "enableResourceInlining": true,
+    "fullTemplateTypeCheck": true,
+    "skipTemplateCodegen": true,
+    "strictInjectionParameters": true,
+    "strictMetadataEmit": true
+  },
+  "compilerOptions": {
+    "baseUrl": "src/",
+    "declaration": true,
+    "inlineSources": false,
+    "outDir": "../../out-tsc/lib",
+    "paths": {
+      "@angular/*": ["../../node_modules/@angular/*"],
+      "less": ["../../node_modules/less"]
+    },
+    "sourceMap": false
+  },
+  "exclude": ["node_modules/**/*.d.ts", "src/test.ts", "**/*.spec.ts"],
+  "extends": "../../tsconfig.json",
+  "files": ["src/public-api.ts"],
+  "include": ["node_modules/**/*.d.ts"]
+}

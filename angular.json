@@ -1,0 +1,74 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  },
+  "defaultProject": "learning-angular-lib",
+  "newProjectRoot": "projects",
+  "projects": {
+    "learning-angular-lib": {
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "project": "projects/learning-angular-lib/ng-package.json",
+            "tsConfig": "projects/learning-angular-lib/tsconfig.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/learning-angular-lib/tsconfig.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "exclude": ["**/node_modules/**"],
+            "tsConfig": [
+              "projects/learning-angular-lib/tsconfig.json",
+              "projects/learning-angular-lib/tsconfig.spec.json"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "browsers": "ChromeHeadlessNoSandbox",
+            "codeCoverage": true,
+            "codeCoverageExclude": ["**/*.module.ts"],
+            "karmaConfig": "projects/learning-angular-lib/karma.conf.js",
+            "main": "projects/learning-angular-lib/src/test.ts",
+            "progress": false,
+            "tsConfig": "projects/learning-angular-lib/tsconfig.spec.json",
+            "watch": false
+          }
+        }
+      },
+      "prefix": "lib",
+      "projectType": "library",
+      "root": "projects/learning-angular-lib",
+      "sourceRoot": "projects/learning-angular-lib/src"
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "flat": false,
+      "inlineStyle": false,
+      "inlineTemplate": false,
+      "skipTests": false
+    },
+    "@schematics/angular:directive": {
+      "skipTests": false
+    },
+    "@schematics/angular:module": {
+      "routing": true,
+      "skipTests": true
+    },
+    "@schematics/angular:service": {
+      "skipTests": false
+    }
+  },
+  "version": 1
+}
