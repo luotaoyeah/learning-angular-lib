@@ -10,6 +10,7 @@
   "compilerOptions": {
     "baseUrl": "src/",
     "declaration": true,
+    "declarationMap": true,
     "inlineSources": false,
     "outDir": "../../out-tsc/lib",
     "paths": {

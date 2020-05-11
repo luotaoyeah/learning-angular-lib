@@ -11,7 +11,7 @@
     "learning-angular-lib": {
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "project": "projects/learning-angular-lib/ng-package.json",
             "tsConfig": "projects/learning-angular-lib/tsconfig.json"

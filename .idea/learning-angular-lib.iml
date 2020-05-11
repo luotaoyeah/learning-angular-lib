@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/projects/learning-angular-lib/coverage" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/learning-angular-lib/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
