@@ -1,11 +1,11 @@
 {
   "name": "@luotao/learning-angular-lib",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
-    "build:dev": "node --max-old-space-size=4096 ../../node_modules/@angular/cli/bin/ng build learning-angular-lib && gulp copyToAPP",
-    "build:prod": "node --max-old-space-size=4096 ../../node_modules/@angular/cli/bin/ng build learning-angular-lib --prod",
+    "build:dev": "ng build learning-angular-lib && gulp copyToAPP",
+    "build:prod": "ng build learning-angular-lib --prod",
     "publish:npm": "npmrc luotao && npm publish ./dist --registry https://registry.npmjs.org/ --access public",
-    "test:unit": "node --max-old-space-size=4096 ../../node_modules/@angular/cli/bin/ng test learning-angular-lib"
+    "test:unit": "ng test learning-angular-lib"
   },
   "dependencies": {
     "@types/lodash": "4.14.169",
