@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "lib": ["ES2018"],
+    "module": "CommonJS",
+    "outDir": "./dist/out-tsc",
+    "resolveJsonModule": true,
+    "target": "ES2015"
+  },
+  "include": ["**/*.ts"]
+}

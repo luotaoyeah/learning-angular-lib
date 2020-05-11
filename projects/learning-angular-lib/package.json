@@ -1,11 +1,14 @@
 {
   "name": "@luotao/learning-angular-lib",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "scripts": {
     "build:dev": "ng build learning-angular-lib && gulp copyToAPP",
-    "build:prod": "ng build learning-angular-lib --prod",
+    "build:prod": "ng build learning-angular-lib --configuration production",
     "publish:npm": "npmrc luotao && npm publish ./dist --registry https://registry.npmjs.org/ --access public",
-    "test:unit": "ng test learning-angular-lib"
+    "test:unit": "ng test learning-angular-lib",
+    "update-packages-versions:major": "ts-node --project=./scripts/tsconfig.json scripts/update-packages-versions.ts major",
+    "update-packages-versions:minor": "ts-node --project=./scripts/tsconfig.json scripts/update-packages-versions.ts minor",
+    "update-packages-versions:patch": "ts-node --project=./scripts/tsconfig.json scripts/update-packages-versions.ts patch"
   },
   "dependencies": {
     "@types/lodash": "4.14.169",

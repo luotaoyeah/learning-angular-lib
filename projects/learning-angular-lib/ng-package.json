@@ -5,5 +5,5 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
-  "whitelistedNonPeerDependencies": ["@types/lodash", "lodash", "lodash-decorators", "ng-zorro-antd"]
+  "allowedNonPeerDependencies": ["@types/lodash", "lodash", "lodash-decorators", "ng-zorro-antd"]
 }
